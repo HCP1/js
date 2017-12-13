@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	
+  </style>
+ </head>
+ <body>
+	<script>
+		var pid="421126199107295734";
+		var birth=pid.slice(6,13+1);
+		var gender=pid[pid.length-2]%2==1?"男":"女";
+		console.log(birth,gender);
+	</script>
+	<script>
+		var code = 'Es9d'
+		do{
+			var input = prompt('请输入用户名:'+code)
+			if (input.toLowerCase() !== code.toLowerCase())
+			{alert('验证码错误，请重输')
+			}else{
+				break
+			}
+		}while(true)
+		document.write('验证通过！')
+	</script>
+ </body>
+</html>
